@@ -9,6 +9,7 @@ const TextInput = ({ type = "text", label, value, onChange }) => (
       className="simple-text-input"
       value={value}
       onChange={e => onChange && onChange(e.target.value)}
+      onClick={e => onChange && onChange(e.target.value)}
     />
   </div>
 );
